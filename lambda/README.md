@@ -1,26 +1,28 @@
-# Lambda - ClimaConecta ⚡
+# ClimaConecta - AWS Lambda ⚡
 
-## Descrição
-
-Esta pasta contém a função **AWS Lambda** utilizada no projeto **ClimaConecta**.  
-A função é responsável por processar os dados do INPE (PRODES e DETER), gerar gráficos e armazená-los no **Amazon S3** para posterior visualização no site.
+Processamento de dados do INPE (PRODES e DETER), geração de gráficos e armazenamento no Amazon S3.
 
 ---
 
-## Uso da Layer
+## Arquitetura
 
-A **Layer** necessária já está disponível neste repositório como o arquivo **`layer.zip`**.  
-Devido ao tamanho (cerca de **70 MB**), o GitHub não permite a visualização do conteúdo, mas o arquivo pode ser baixado normalmente.
+```
+INPE (PRODES/DETER) → Lambda → Gráficos → S3 → Site
+```
 
-### Passos para usar:
+## Componentes
 
-1. **Baixar o repositório**  
-   - Clone o projeto:  
-     ```bash
-     git clone https://github.com/Erick-Fanka/clima-conecta.git
-     ```
-   - Ou faça o download manual no GitHub (botão verde **Code → Download ZIP**).
+| Arquivo | Função |
+|---|---|
+| `lambda_function.py` | Função principal da Lambda |
+| `layer.zip` | Layer com dependências (~70 MB) |
 
-2. **Enviar o arquivo para o Amazon S3**  
-   ```bash
-   aws s3 cp lambda/layer.zip s3://seu-bucket/
+## Setup da Layer
+
+| Passo | Comando |
+|---|---|
+| Clonar o repositório | `git clone https://github.com/Erick-Fanka/clima-conecta.git` |
+| Enviar layer para o S3 | `aws s3 cp lambda/layer.zip s3://seu-bucket/` |
+| Criar a Layer na AWS | Usar o arquivo do S3 no console da Lambda |
+
+> **Nota:** O arquivo `layer.zip` (~70 MB) não pode ser visualizado no GitHub, mas pode ser baixado normalmente.
