@@ -155,13 +155,13 @@ Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE)
   <tr>
     <td align="center">
       <a href="https://github.com/erickfanka">
-        <img src="https://avatars.githubusercontent.com/erickfanka" width="120px;" alt="Foto de Erick Fanka" style="border-radius: 50%;" />
+        <img src="https://avatars.githubusercontent.com/Erick-Fanka" width="120px;" alt="Foto de Erick Fanka" style="border-radius: 50%;" />
       </a>
       <br />
       <strong>Erick Fanka</strong>
     </td>
     <td>
-      <strong>Medalhista WorldSkills | Cloud Computing | AWS | Python | Redes </strong><br />
+      <strong>Competidor WorldSkills | Cloud Computing | AWS | Python | Redes </strong><br />
       <a href="https://www.linkedin.com/in/erick-fanka">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
       </a>
